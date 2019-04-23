@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    background-color: #333;
+    height: 80%;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+input[type="button"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+}
+
+/* Self Clearing Goodness */
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.contact-section-head h3 {
+    color: #5B6074;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+.contact-section-head p {
+    color: #A5AABE;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 1.2em;
+}
+
+.contact-section-head label {
+    height: 3px;
+    width: 7%;
+    background: #DBDDE5;
+    display: block;
+    position: absolute;
+    right: 46.5%;
+    bottom: 52%;
+    margin: -10px 0;
+}
+
+.contact-section-head {
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.contact-info ul {
+    margin: 2em 0;
+}
+
+.contact-info ul li {
+    display: inline-block;
+}
+
+.contact-info ul li a {
+    color: #A5AABE;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.contact-info ul li {
+    color: #A5AABE;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.contact-info input.text, .contact-info textarea {
+    width: 44%;
+    border: none;
+    outline: none;
+    background: #F3F3F3;
+    padding: 16px 18px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #CACACA;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    margin: 10px 25px 20px 0;
+}
+
+.contact-info textarea {
+    width: 90.5%;
+    resize: none;
+    height: 13em;
+    margin-bottom: 1em;
+}
+
+.contact-info input[type="button"] {
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    color: #fff;
+    background: #FFD670;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+.contact-info input[type="button"]:hover {
+    background: #F7B000;
+}
+
+.contact-section {
+    padding: 4em 0;
+}

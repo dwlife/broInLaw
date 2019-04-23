@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxy.bil.dao.IUserDao">
+
+	<resultMap type="com.zxy.bil.pojo.User" id="userResultMap">
+		<id property="userId" column="user_id" />
+		<result property="userName" column="user_name" />
+		<result property="userPwd" column="user_pwd" />
+	</resultMap>
+	<!-- 查询User数据操作 -->
+	<select id="getUser" resultMap="userResultMap">
+		SELECT
+		user_id,
+		user_name,
+		user_pwd
+		FROM tbl_user
+	</select>
+	<!-- 按用户名查询密码 -->
+	<select id="getPassword" resultType="java.lang.String">
+		SELECT
+		user_pwd
+		FROM tbl_user
+		<if test="userName != null">
+			WHERE user_name = #{userName}
+		</if>
+	</select>
+
+	<!-- 按用户名查询id -->
+	<select id="getUserId" resultType="java.lang.Integer">
+		SELECT
+		user_id
+		FROM tbl_user
+		<if test="userName != null">
+			WHERE user_name = #{userName}
+		</if>
+	</select>
+	
+	<insert id="insert" parameterType="com.zxy.bil.pojo.User">
+		INSERT INTO tbl_user (
+		user_name,
+		user_pwd
+		)
+		VALUES(
+		#{user.userName},
+		#{user.userTel},
+		#{user.userPwd}
+		)
+	</insert>
+</mapper>

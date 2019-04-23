@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/base-style.css">
+    <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="static/css/cover.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>Welcome</title>
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container" style="height: 80%;">
+            <div class="masthead clearfix" align="center">
+                <div class="inner">
+                    <h3 class="masthead-brand">Welcome</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/login">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="inner cover" style="width: 100%;height: 100%;">
+                <h1 class="cover-heading">读题回答</h1>
+                <p class="lead" id="question"></p>
+                <p class="lead">
+                    <input id="inputDiv" style="color: #000;width: 600px;">
+                </p>
+                <p class="lead" id="tailNote"></p>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-default" onclick="getAnswer()">查看答案</a>
+                </p>
+                <p class="lead" id="answer" style="display: none;"></p>
+            </div>
+            <div class="mastfoot" align="center">
+                <div class="inner">
+                    <p>Cover template for <a href="http://getbootstrap.com/">Bootstrap</a>, by <a
+                            href="https://github.com/hiYuzu/ssmFrameworkPractice">@hiYuzu</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="static/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<script src="static/js/ie-emulation-modes-warning.js"></script>
+<script src="static/js/index.js"></script>
+<!--<script src="static/js/bodyClickEvent.js"></script>-->
+</html>

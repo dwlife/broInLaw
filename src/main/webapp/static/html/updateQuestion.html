@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/message.css">
+    <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
+    <!--webFont-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic">
+    <title>更新问题</title>
+</head>
+<body>
+<div class="contact-section text-center">
+    <div class="container">
+        <div class="contact-section-head">
+            <h3>问题更新</h3>
+            <label></label>
+            <p>请在下方输入新的问题和答案</p>
+        </div>
+        <div class="contact-info">
+            <ul>
+                <li><i class="fa fa-envelope fa-2x"></i></li>
+                <li><a href="mailto:pomelo.yuzu1997@gmail.com" target="_blank">pomelo.yuzu1997@gmail.com</a></li>
+                <li><i class="fa fa-phone fa-2x"></i></li>
+                <li>176-9598-2286</li>
+            </ul>
+            <form id="messageForm" accept-charset="UTF-8">
+                <textarea id="questionTextArea" onfocus="if(this.value == '输入问题...') this.value='';"
+                          onblur="if(this.value == '') this.value='输入问题...';">输入问题...</textarea>
+                <textarea id="answerTextArea" onfocus="if(this.value == '输入答案...') this.value='';"
+                          onblur="if(this.value == '') this.value='输入答案...';">输入答案...</textarea>
+                <textarea id="tailNoteArea" onfocus="if(this.value == '输入问题补充...') this.value='';"
+                          onblur="if(this.value == '') this.value='输入问题补充...';">输入问题补充...</textarea>
+                <input type="button" value="更新内容" onclick="updateQuestion()">
+            </form>
+            <a href="/logout" style="display: none;" id="goHome"></a>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/updateQuestion.js"></script>
+</html>
