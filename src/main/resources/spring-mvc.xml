@@ -15,7 +15,7 @@
     <!-- 启用spring mvc 注解 <context:annotation-config /> -->
     <context:annotation-config/>
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-    <context:component-scan base-package="com.zxy.ssm.controller">
+    <context:component-scan base-package="com.zxy.bil.controller">
         <context:include-filter type="annotation"
                                 expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
     </context:component-scan>
@@ -61,7 +61,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/*/*"/>
-            <bean class="com.zxy.ssm.interceptor.SecurityInterceptor">
+            <bean class="com.zxy.bil.interceptor.SecurityInterceptor">
                 <property name="excludedUrls">
                     <list>
                         <value>/login</value>

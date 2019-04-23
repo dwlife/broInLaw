@@ -9,8 +9,8 @@
         <module name="bil" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bil" target="6" />
+    <bytecodeTargetLevel target="8">
+      <module name="bil" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
