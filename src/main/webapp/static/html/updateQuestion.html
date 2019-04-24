@@ -28,12 +28,12 @@
                 <li>176-9598-2286</li>
             </ul>
             <form id="messageForm" accept-charset="UTF-8">
-                <textarea id="questionTextArea" onfocus="if(this.value == '输入问题...') this.value='';"
-                          onblur="if(this.value == '') this.value='输入问题...';">输入问题...</textarea>
-                <textarea id="answerTextArea" onfocus="if(this.value == '输入答案...') this.value='';"
-                          onblur="if(this.value == '') this.value='输入答案...';">输入答案...</textarea>
-                <textarea id="tailNoteArea" onfocus="if(this.value == '输入问题补充...') this.value='';"
-                          onblur="if(this.value == '') this.value='输入问题补充...';">输入问题补充...</textarea>
+                <textarea id="questionTextArea" onfocus="if(this.value === '输入问题...') this.value='';"
+                          onblur="if(this.value === '') this.value='输入问题...';">输入问题...</textarea>
+                <textarea id="answerTextArea" onfocus="if(this.value === '输入答案...') this.value='';"
+                          onblur="if(this.value === '') this.value='输入答案...';">输入答案...</textarea>
+                <textarea id="tailNoteArea" onfocus="if(this.value === '输入问题补充...') this.value='';"
+                          onblur="if(this.value === '') this.value='输入问题补充...';">输入问题补充...</textarea>
                 <input type="button" value="更新内容" onclick="updateQuestion()">
             </form>
             <a href="/logout" style="display: none;" id="goHome"></a>
